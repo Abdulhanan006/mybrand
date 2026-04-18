@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Navbar with Smooth Scroll</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="navbar">
+    <div class="container header-inner">
+      <a href="#home" class="logo">MyBrand</a>
+      <button class="menu-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="panel panel-home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Digital Studio</p>
+          <h1>Build Bold Experiences<br />That Move People.</h1>
+          <p>Beautiful visuals, smooth interactions, and a sticky navigation system that feels premium on desktop and mobile.</p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#gallery" class="btn btn-secondary">See the Gallery</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Creative workspace" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="panel panel-about">
+      <div class="container section-grid">
+        <div class="section-media">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Team working together" />
+        </div>
+        <div class="section-copy">
+          <p class="eyebrow">About Us</p>
+          <h2>Crafting premium designs for growing brands.</h2>
+          <p>We help businesses stand out online with powerful storytelling, modern visuals, and seamless navigational flow.</p>
+          <ul class="feature-list">
+            <li>Brand-driven visual systems</li>
+            <li>Intuitive mobile-first interactions</li>
+            <li>Speed, accessibility, and polish</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="panel panel-services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>What we deliver</h2>
+          <p>From visual direction to launch-ready builds, every step is designed to feel smooth and confident.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Design Systems</h3>
+            <p>Pixel-perfect interfaces with clean typography, bold color, and thoughtful animation.</p>
+          </article>
+          <article class="service-card">
+            <h3>Web Development</h3>
+            <p>Responsive sites built with modern standards and fast, accessible interactions.</p>
+          </article>
+          <article class="service-card">
+            <h3>Brand Strategy</h3>
+            <p>Carefully crafted messaging and visual identity for memorable online presence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="panel panel-gallery">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>Recent work highlights</h2>
+          <p>A selection of layouts and style choices built to elevate each brand’s narrative.</p>
+        </div>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Creative office" />
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Design workspace" />
+          <img src="https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=600&q=80" alt="Brand imagery" />
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80" alt="Modern office" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel panel-contact">
+      <div class="container section-grid contact-grid">
+        <div class="section-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s create something memorable.</h2>
+          <p>Ready to launch a polished website with beautiful imagery and smooth navigation? Start the conversation today.</p>
+          <a href="mailto:bhattihanan908@gmail.com" class="btn btn-primary">Email Us</a>
+        </div>
+        <div class="contact-card">
+          <div>
+            <p class="small-label">Office</p>
+            <p>Gujranwala<br />Punjab, Pakistan</p>
+          </div>
+          <div>
+            <p class="small-label">Phone</p>
+            <p>+92 329 9450294</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
